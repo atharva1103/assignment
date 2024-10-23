@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <style>
+        .diagonal-bg {
+            background: linear-gradient(135deg, #2E1B6D 65%, #ffffff 35%);
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            transition: transform 0.8s ease;
+            transform-style: preserve-3d;
+        }
+        
+        .service-card:hover {
+            transform: rotate(360deg);
+        }
+        
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            border: 2px solid #2E1B6D;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: -40px;
+            z-index: 10;
+        }
+
+        .explore-link {
+            color: #4A3B8B;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .explore-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="p-8 bg-gray-100">
+        <p class="text-center text-gray-600">Content above the services section...</p>
+    </div>
+
+    <div id="assignment" class="my-16 mx-8">
+        <div class="diagonal-bg py-16 px-8 rounded-lg">
+            <div class="container mx-auto max-w-7xl">
+                <h1 class="text-white text-5xl font-bold mb-16">OUR SERVICES</h1>
+                
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div class="flex flex-col items-center">
+                        <div class="icon-circle">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <circle cx="20" cy="20" r="18" stroke="#2E1B6D" stroke-width="2"/>
+                                <path d="M20 12v16M12 20h16" stroke="#2E1B6D" stroke-width="2.5"/>
+                            </svg>
+                        </div>
+                        <div class="service-card w-full pt-8">
+                            <h3 class="text-[#2E1B6D] font-bold text-xl mb-3">Emergency Plumbing Services</h3>
+                            <p class="text-gray-600 mb-6">Our plumbers are ready to go 24/7 for emergencies - including nights, weekends and holidays.</p>
+                            <a href="#" class="explore-link">
+                                EXPLORE THIS SERVICE <span class="ml-1">›</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <div class="icon-circle">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M20 8c-7 0-12 5-12 12 0 3 2 5 3 7l9 9 9-9c1-2 3-4 3-7 0-7-5-12-12-12z" stroke="#2E1B6D" stroke-width="2"/>
+                                <path d="M20 12v12" stroke="#2E1B6D" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="service-card w-full pt-8">
+                            <h3 class="text-[#2E1B6D] font-bold text-xl mb-3">Plumbing and Drains</h3>
+                            <p class="text-gray-600 mb-6">As the largest plumbing and drain service company, we make thousands of repairs every day.</p>
+                            <a href="#" class="explore-link">
+                                EXPLORE THIS SERVICE <span class="ml-1">›</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <div class="icon-circle">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <path d="M20 8l-12 12c0 6.6 5.4 12 12 12s12-5.4 12-12L20 8z" stroke="#2E1B6D" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="service-card w-full pt-8">
+                            <h3 class="text-[#2E1B6D] font-bold text-xl mb-3">Water Damage</h3>
+                            <p class="text-gray-600 mb-6">Our teams are equipped with state-of-the-art water extraction and cleanup equipment.</p>
+                            <a href="#" class="explore-link">
+                                EXPLORE THIS SERVICE <span class="ml-1">›</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <div class="icon-circle">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <rect x="12" y="8" width="16" height="24" rx="2" stroke="#2E1B6D" stroke-width="2"/>
+                                <path d="M16 16h8M16 20h8M16 24h8" stroke="#2E1B6D" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <div class="service-card w-full pt-8">
+                            <h3 class="text-[#2E1B6D] font-bold text-xl mb-3">Water Heaters</h3>
+                            <p class="text-gray-600 mb-6">Trust Roto-Rooter for repair and replacement of gas, electric and tankless water heaters.</p>
+                            <a href="#" class="explore-link">
+                                EXPLORE THIS SERVICE <span class="ml-1">›</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-8 bg-gray-100">
+        <p class="text-center text-gray-600">Content below the services section...</p>
+    </div>
+</body>
+</html>
